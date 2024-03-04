@@ -1,0 +1,13 @@
+model: ResNet50
+dataset: cifar10
+
+train:
+  batchsize: 128
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 0.0001
+
+
+scheduler:
+  epochs: 10
+  milestones: [50, 100]

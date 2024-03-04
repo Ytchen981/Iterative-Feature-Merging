@@ -1,0 +1,12 @@
+model: vgg19
+dataset: cifar10
+
+train:
+  batchsize: 128
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 0.0001
+
+scheduler:
+  epochs: 160
+  milestones: [80, 120]
